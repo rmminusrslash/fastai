@@ -15,7 +15,7 @@ Update the `requirements.txt` file, when you installed a new dependency with `pi
 
 ## Start Jupyter (in virtualenv)
 
-    $ PYTHONPATH=`pwd` jupyter-notebook --NotebookApp.token='' 
+    $ PATH=`pwd`:$PATH PYTHONPATH=`pwd` jupyter-notebook --NotebookApp.token='' 
 
 If you run the notebook on a server, use
     $ PYTHONPATH=`pwd` jupyter-notebook --NotebookApp.token='' --no-browser --port <port>
